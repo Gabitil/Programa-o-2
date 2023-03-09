@@ -1,4 +1,4 @@
-//faca um programa que leia um numero inteiro e diga se ele e par ou impar
+//programa que lê um numero inteiro e diz se ele e par ou impar
 import java.util.Scanner; //importa a classe Scanner do pacote java.util para o programa poder ler dados do teclado 
 public class teste { //classe principal do programa 
     public static void main(String[] args) { //metodo principal do programa 
