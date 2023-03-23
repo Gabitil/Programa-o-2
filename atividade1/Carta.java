@@ -1,11 +1,11 @@
-package copag;
+package atividade1;
 
 public class Carta {
     private String naipe;
     private int valor;
 
     
-    //construtor
+
     public Carta() {
         naipe = "";
         valor = 0;
@@ -16,7 +16,7 @@ public class Carta {
         this.valor = valor;
     }
 
-    //getters e setters
+
     public String getNaipe(){
         return naipe;
     }
@@ -33,7 +33,6 @@ public class Carta {
         this.valor = valor;
     }
 
-    //compara o valor da carta
     public int comparaValor(Carta carta){
         if (carta.getValor() > this.valor) {
             return 1;
@@ -44,7 +43,6 @@ public class Carta {
         }
     }
 
-    //compara o naipe da carta
     public boolean compararNaipe(Carta carta){
         if (carta.getNaipe().equals(this.naipe)) {
             return true;
