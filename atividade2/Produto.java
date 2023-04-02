@@ -1,11 +1,19 @@
 package atividade2;
 
 public class Produto {
-    
+
     private String descricao;
     private double valorInicial;
     private double valorAtual;
     private boolean vendido;
+    private Pessoa comprador;
+
+    public Produto() {
+        this.descricao = "";
+        this.valorInicial = 0;
+        this.valorAtual = 0;
+        this.vendido = false;
+    }
 
     public Produto(String descricao, double valorInicial) {
         this.descricao = descricao;
@@ -44,5 +52,20 @@ public class Produto {
 
     public void setVendido(boolean vendido) {
         this.vendido = vendido;
+    }
+
+    public Pessoa getComprador() {
+        return comprador;
+    }
+    
+    public void setComprador(Pessoa comprador) {
+        this.comprador = comprador;
+    }
+
+    public boolean equals(Produto produto) {
+        return this.descricao.equals(produto.getDescricao()) &&
+               this.valorInicial == produto.getValorInicial() &&
+               this.valorAtual == produto.getValorAtual() &&
+               this.vendido == produto.isVendido();
     }
 }
