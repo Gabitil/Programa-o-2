@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CardapioController">
+   <children>
+      <AnchorPane prefHeight="411.0" prefWidth="600.0">
+         <children>
+            <GridPane prefHeight="401.0" prefWidth="600.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="45.0" minHeight="0.0" prefHeight="16.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="106.0" minHeight="10.0" prefHeight="57.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="72.0" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="136.0" minHeight="10.0" prefHeight="112.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="114.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="0.0" prefHeight="19.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Clinica Bem estar" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                  <GridPane GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Dia da Semana:" GridPane.halignment="CENTER" />
+                        <ComboBox fx:id="cbDSemana" prefHeight="31.0" prefWidth="280.0" GridPane.columnIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane prefHeight="94.0" prefWidth="600.0" GridPane.rowIndex="3">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="278.0" minWidth="10.0" prefWidth="212.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="335.0" minWidth="10.0" prefWidth="186.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="231.0" minWidth="10.0" prefWidth="191.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <RadioButton fx:id="rbCafeM" mnemonicParsing="false" text="Cafe da Manhã" GridPane.columnIndex="1" />
+                        <RadioButton fx:id="rbLancheM" mnemonicParsing="false" text="Lanche da Manhã" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <RadioButton fx:id="rbAlmoco" mnemonicParsing="false" text="Almoço" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <RadioButton fx:id="rbLancheT" mnemonicParsing="false" text="Lanche da Tarde" GridPane.columnIndex="2" />
+                        <RadioButton fx:id="rbJantar" mnemonicParsing="false" text="Jantar" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <RadioButton fx:id="rbCeia" mnemonicParsing="false" text="Ceia" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.halignment="CENTER" GridPane.rowIndex="4">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Descrição:" GridPane.halignment="CENTER" />
+                        <TextField fx:id="tfDescricao" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#handleBotões" prefHeight="31.0" prefWidth="280.0" GridPane.columnIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="5">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Valor Calorico:" GridPane.halignment="CENTER" />
+                        <TextField fx:id="tfVCalorico" maxWidth="-Infinity" onAction="#handleBotões" prefHeight="31.0" prefWidth="280.0" GridPane.columnIndex="1" />
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.rowIndex="7">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="btIncluir" mnemonicParsing="false" onAction="#handleBotões" text="Incluir" GridPane.halignment="CENTER" />
+                        <Button fx:id="btRemover" mnemonicParsing="false" onAction="#handleBotões" text="Remover" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                        <Button fx:id="btConsultar" mnemonicParsing="false" onAction="#handleBotões" text="Consultar" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                        <Button fx:id="btAlterar" mnemonicParsing="false" onAction="#handleBotões" text="Alterar" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                        <Button fx:id="btLimpar" mnemonicParsing="false" onAction="#handleBotões" text="Limpar" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
+                     </children>
+                  </GridPane>
+                  <Label fx:id="lbAvisos" text="Escolha as Refeições da Semana!" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

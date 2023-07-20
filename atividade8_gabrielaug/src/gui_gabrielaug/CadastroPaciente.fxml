@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_gabrielaug.CadastroPacienteController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
+         <children>
+            <GridPane prefHeight="265.0" prefWidth="640.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="402.0" minWidth="10.0" prefWidth="304.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="426.0" minWidth="10.0" prefWidth="279.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="207.0" minWidth="0.0" prefWidth="0.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="tf_codigo" prefHeight="31.0" prefWidth="297.0" GridPane.columnIndex="1" />
+                  <TextField fx:id="tf_nome" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="tf_peso" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="tf_idade" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="tf_altura" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Label fx:id="lb_codigo" text="Codigo:" />
+                  <Label fx:id="lb_nome" text="Nome:" GridPane.rowIndex="1" />
+                  <Label fx:id="lb_peso" text="Peso:" GridPane.rowIndex="2" />
+                  <Label fx:id="lb_genero" text="Genero:" GridPane.rowIndex="3" />
+                  <Label fx:id="lb_idade" text="Idade:" GridPane.rowIndex="4" />
+                  <Label fx:id="lb_altura" text="Altura" GridPane.rowIndex="5" />
+                  <ComboBox fx:id="cb_genero" prefHeight="31.0" prefWidth="305.0" promptText="Selecione um gênero" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               </children>
+            </GridPane>
+            <GridPane layoutY="296.0" prefHeight="100.0" prefWidth="640.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="bt_novo" mnemonicParsing="false" onAction="#handleNovo" prefHeight="35.0" prefWidth="125.0" text="Novo" />
+                  <Button fx:id="bt_relatorio" mnemonicParsing="false" onAction="#handleRelatorio" prefHeight="35.0" prefWidth="125.0" text="Relatório" GridPane.columnIndex="2" />
+                  <Button fx:id="bt_sair" mnemonicParsing="false" onAction="#handleSair" prefHeight="35.0" prefWidth="125.0" text="Sair" GridPane.columnIndex="3" />
+                  <Button fx:id="bt_incluir" mnemonicParsing="false" onAction="#handleIncluir" prefHeight="35.0" prefWidth="125.0" text="Incluir" />
+                  <Button fx:id="bt_consultar" mnemonicParsing="false" onAction="#handleConsultar" prefHeight="35.0" prefWidth="125.0" text="Consultar" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <Pane layoutY="266.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="35.0" prefWidth="640.0">
+               <children>
+                  <Label fx:id="lb_textocd" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="7.0" text="Digite os dados do Paciente" textOverrun="CLIP" />
+                  <Separator layoutY="-1.0" prefHeight="3.0" prefWidth="640.0" />
+                  <Separator layoutX="-1.0" layoutY="34.0" prefHeight="3.0" prefWidth="640.0" />
+               </children>
+            </Pane>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

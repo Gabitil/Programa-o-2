@@ -1,0 +1,33 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "java",
+			"name": "App",
+			"request": "launch",
+			"mainClass": "Lol.App",
+			"projectName": "teste2_75311dc1"
+		},
+		{
+			"type": "java",
+			"name": "Questao",
+			"request": "launch",
+			"mainClass": "Questao",
+			"projectName": "teste2_75311dc1"
+		},
+		{
+			"vmArgs": "--module-path \"C:/Program Files (x86)/Oracle/JavaFX Scene Builder 2.0/lib\" --add-modules javafx.controls,javafx.fxml",
+			"type": "java",
+			"name": "Launch Current File",
+			"request": "launch",
+			"mainClass": "${file}"
+		},
+		{
+			"vmArgs": "--module-path \"C:/Program Files (x86)/Oracle/JavaFX Scene Builder 2.0/lib\" --add-modules javafx.controls,javafx.fxml",
+			"type": "java",
+			"name": "Launch App",
+			"request": "launch",
+			"mainClass": "App"
+		}
+	]
+}

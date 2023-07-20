@@ -1,0 +1,54 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "java",
+			"name": "CadastroPaciente",
+			"request": "launch",
+			"mainClass": "gui_gabrielaug.CadastroPaciente",
+			"projectName": "atividade8_gabrielaug"
+		},
+		{
+			"type": "java",
+			"name": "CadastroPaciente",
+			"request": "launch",
+			"mainClass": "gui_gabrielaug.CadastroPaciente",
+			"projectName": "atividade8_gabrielaug_3fe08c79"
+		},
+		{
+			"type": "java",
+			"name": "CadastroPaciente",
+			"request": "launch",
+			"mainClass": "gui.CadastroPaciente",
+			"projectName": "atividade8_gabrielaug_3fe08c79"
+		},
+		{
+			"type": "java",
+			"name": "Main",
+			"request": "launch",
+			"mainClass": "gui.Main",
+			"projectName": "atividade8_gabrielaug_3fe08c79"
+		},
+		{
+			"type": "java",
+			"name": "JanelaAgenda",
+			"request": "launch",
+			"mainClass": "gui.JanelaAgenda",
+			"projectName": "atividade8_gabrielaug_3fe08c79"
+		},
+		{
+			"vmArgs": "--module-path \"c:/Users/gabri/OneDrive/Área de Trabalho/Faculfodase/javafx-sdk-20.0.1/lib\" --add-modules javafx.controls,javafx.fxml",
+			"type": "java",
+			"name": "Launch Current File",
+			"request": "launch",
+			"mainClass": "${file}"
+		},
+		{
+			"vmArgs": "--module-path \"c:/Users/gabri/OneDrive/Área de Trabalho/Faculfodase/javafx-sdk-20.0.1/lib\" --add-modules javafx.controls,javafx.fxml",
+			"type": "java",
+			"name": "Launch App",
+			"request": "launch",
+			"mainClass": "App"
+		}
+	]
+}

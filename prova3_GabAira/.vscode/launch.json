@@ -1,0 +1,26 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "java",
+			"name": "Janela",
+			"request": "launch",
+			"mainClass": "gui.Janela",
+			"projectName": "prova3_GabAira_8321c33d"
+		},
+		{
+			"vmArgs": "--module-path \"C:/Program Files (x86)/Oracle/JavaFX Scene Builder 2.0/lib\" --add-modules javafx.controls,javafx.fxml",
+			"type": "java",
+			"name": "Launch Current File",
+			"request": "launch",
+			"mainClass": "${file}"
+		},
+		{
+			"vmArgs": "--module-path \"C:/Program Files (x86)/Oracle/JavaFX Scene Builder 2.0/lib\" --add-modules javafx.controls,javafx.fxml",
+			"type": "java",
+			"name": "Launch App",
+			"request": "launch",
+			"mainClass": "App"
+		}
+	]
+}

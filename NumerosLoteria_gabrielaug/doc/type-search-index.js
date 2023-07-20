@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"gui_gabrielaug","l":"JanelaInicial"},{"p":"gui_gabrielaug","l":"JanelaInicialController"},{"p":"dominio_gabrielaug","l":"Jogo"},{"p":"dominio_gabrielaug","l":"Lotofacil"},{"p":"dominio_gabrielaug","l":"MegaSena"},{"p":"dominio_gabrielaug","l":"Quina"}];updateSearchResults();

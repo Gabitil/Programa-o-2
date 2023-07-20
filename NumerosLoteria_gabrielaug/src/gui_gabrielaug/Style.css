@@ -1,0 +1,126 @@
+/*paleta de cores: #4E8A59, #C4FFCF, #90D69D, #8A414E, #D6909C*/
+
+.vbox {
+    -fx-background-color: #67B575;
+
+}
+
+
+.btAddSub {
+    -fx-background-color: transparent;
+	-fx-background-radius: 15px;
+    -fx-text-fill: #98E3A6;
+    -fx-text-alignment: justify;
+    -fx-font-family: Arial;
+    -fx-padding: 0px 0px 0px 0px;
+    -fx-font-weight: bold;
+    -fx-font-size: 25px;
+    -fx-min-width: 10px;
+    -fx-min-height: 10px;
+    -fx-max-width: 30px;
+    -fx-max-height: 40px;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(three-pass-box, #67B575, 1, 0, 1.5, 1.5);
+}
+
+.btAddSub:hover {
+    -fx-effect: none;
+}
+
+.btGerar{
+    -fx-background-color: #67B575;
+	-fx-background-radius: 10px;
+    -fx-text-fill: #ffffff;
+    -fx-text-alignment: justify;
+    -fx-font-family: Arial;
+    -fx-padding: 0px 0px 2px 0px;
+    -fx-font-size: 14px;
+    -fx-min-width: 10px;
+    -fx-min-height: 10px;
+    -fx-max-width: 125px;
+    -fx-max-height: 35px;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(three-pass-box, #0000017e, 5, 0, 3, 3);
+}
+
+.btGerar:hover {
+    -fx-effect: none;
+}
+
+.gridPaneTopo{
+    -fx-background-color: #E398A6;
+}
+
+.labelTopo{
+    -fx-text-fill: #8A414E;
+}
+
+.gridPaneJogo{
+    -fx-background-color: #98E3A6;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-alignment: center;
+    -fx-border-color: #67B575;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+}
+
+.gridPaneInterno{
+    -fx-background-color: #C4FFCF;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-alignment: center;
+    -fx-border-color: #67B575;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+}
+
+.gridPaneFooter{
+
+    -fx-background-color: #B35465;
+}
+
+.combobox{
+    -fx-background-color: #C4FFCF;
+    -fx-background-radius: 10px;
+    -fx-alignment: center;
+    -fx-border-color: #67B575;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-max-width: 250px;
+    -fx-min-width: 150px;
+    -fx-max-height: 40px;
+    -fx-min-height: 30px;
+    
+}
+
+.textArea{
+    -fx-background-color: #C4FFCF;
+    -fx-background-radius: 10px;
+    -fx-padding: 10px;
+    -fx-alignment: center;
+    -fx-border-color: #67B575;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+}
+
+.btsFooter{
+    -fx-background-color: transparent;
+    -fx-background-radius: 100px;
+    -fx-text-fill: #fdb4c1;
+    -fx-text-alignment: justify;
+    -fx-font-family: Arial;
+    -fx-font-weight: bold;
+    -fx-padding: 0px 0px 0px 0px;
+    -fx-font-size: 16px;
+    -fx-min-width: 10px;
+    -fx-min-height: 10px;
+    -fx-max-width: 125px;
+    -fx-max-height: 35px;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(three-pass-box, #0000017e, 5, 0, 1.5, 0.5);
+}
+
+.btsFooter:hover {
+    -fx-effect: none;
+}
