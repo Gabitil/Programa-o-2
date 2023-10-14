@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="721.0" prefWidth="667.0" styleClass="vbox" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_gabrielaug.JanelaInicialController">
+   <children>
+      <AnchorPane prefHeight="587.0" prefWidth="694.0">
+         <children>
+            <GridPane prefHeight="721.0" prefWidth="670.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="152.0" minHeight="10.0" prefHeight="152.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="524.0" minHeight="10.0" prefHeight="482.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="134.0" minHeight="0.0" prefHeight="87.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane prefHeight="457.0" prefWidth="670.0" GridPane.rowIndex="1">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="0.0" prefWidth="0.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="550.0" minWidth="10.0" prefWidth="550.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="331.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="331.0" minHeight="10.0" prefHeight="102.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="331.0" minHeight="7.0" prefHeight="15.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="417.0" minHeight="10.0" prefHeight="311.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="331.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <GridPane styleClass="gridPaneJogo" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="266.0" minWidth="10.0" prefWidth="223.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="454.0" minWidth="10.0" prefWidth="303.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <GridPane GridPane.rowIndex="1">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="165.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.0" minWidth="10.0" prefWidth="58.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="Números Disponiveis:" textFill="#3a6441" GridPane.halignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font></Label>
+                                    <Label fx:id="lb_ndisponiveis" prefHeight="21.0" prefWidth="43.0" text="0 a X" GridPane.columnIndex="1" GridPane.halignment="LEFT">
+                                       <padding>
+                                          <Insets left="5.0" />
+                                       </padding></Label>
+                                 </children>
+                              </GridPane>
+                              <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="312.0" minWidth="10.0" prefWidth="259.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.0" minWidth="10.0" prefWidth="44.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label prefHeight="21.0" prefWidth="249.0" text="Números de apostas Disponiveis:" textFill="#3a6441" GridPane.halignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font></Label>
+                                    <Label fx:id="lb_nadisponivel" prefHeight="21.0" prefWidth="50.0" text="0 a X" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                              </GridPane>
+                              <Label text="Jogo:" textFill="#3a6441" GridPane.halignment="CENTER">
+                                 <font>
+                                    <Font name="Arial Bold" size="15.0" />
+                                 </font></Label>
+                              <ComboBox fx:id="cb_jogos" onAction="#handleCombobox" prefHeight="45.0" prefWidth="263.0" styleClass="combobox" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                           </children>
+                        </GridPane>
+                        <GridPane styleClass="gridPaneInterno" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <GridPane>
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="85.0" minHeight="0.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="180.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="180.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="197.0" minHeight="10.0" prefHeight="134.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="Quantidades de números da aposta:" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+                                    <GridPane GridPane.rowIndex="2">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Button fx:id="bt_menos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleBotoes" prefHeight="30.0" prefWidth="30.0" styleClass="btAddSub" text="-" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                          <Button fx:id="bt_mais" mnemonicParsing="false" onAction="#handleBotoes" prefHeight="31.0" prefWidth="31.0" styleClass="btAddSub" text="+" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                                          <Label fx:id="lb_napostas" text="6" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                                       </children>
+                                    </GridPane>
+                                    <GridPane GridPane.rowIndex="3">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints maxHeight="157.0" minHeight="10.0" prefHeight="156.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <Button fx:id="bt_gerarNum" mnemonicParsing="false" onAction="#handleBotoes" styleClass="btGerar" text="Gerar Números" GridPane.halignment="CENTER" GridPane.valignment="TOP" />
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </GridPane>
+                              <GridPane GridPane.columnIndex="1">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="86.0" minWidth="4.0" prefWidth="17.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="259.0" minWidth="10.0" prefWidth="244.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="93.0" minWidth="0.0" prefWidth="15.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="128.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="249.0" minHeight="10.0" prefHeight="227.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="239.0" minHeight="8.0" prefHeight="16.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="Números Gerados" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                                    <TextArea fx:id="ta_ngerados" prefHeight="219.0" prefWidth="244.0" styleClass="textArea" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <GridPane styleClass="gridPaneFooter" GridPane.rowIndex="2">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="15.0" minHeight="7.0" prefHeight="15.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="39.0" minHeight="10.0" prefHeight="24.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="21.0" minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="© 2023 Gabriel Augusto de Lima Maia" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                        <GridPane GridPane.rowIndex="1">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="290.0" minWidth="10.0" prefWidth="252.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.0" minWidth="10.0" prefWidth="133.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="261.0" minWidth="10.0" prefWidth="254.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="bt_github" mnemonicParsing="false" onAction="#handleFooter" styleClass="btsFooter" text="GitHub" GridPane.halignment="RIGHT" />
+                              <Button fx:id="bt_linkedin" mnemonicParsing="false" onAction="#handleFooter" styleClass="btsFooter" text="LinkedIn" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                              <Button fx:id="bt_instagram" mnemonicParsing="false" onAction="#handleFooter" styleClass="btsFooter" text="Instagram" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+                  <GridPane styleClass="gridPaneTopo">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label styleClass="labelTopo" text="Loterica Aleatório" textFill="#8a414e" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                           <font>
+                              <Font name="Maiandra GD" size="51.0" />
+                           </font>
+                        </Label>
+                        <Label styleClass="labelTopo" text="Seu gerador de números aletório confiavel!" textFill="#8a414e" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                           <font>
+                              <Font name="Maiandra GD" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

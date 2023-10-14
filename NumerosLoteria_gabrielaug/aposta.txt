@@ -1,5 +1,5 @@
 Jogo: Mega-Sena
-Números apostados: 6
+Números apostados: 10
 Números disponíveis para apostar: 6 a 20
 Números disponíveis no domínio: 1 a 60
-Números gerados: 33 20 5 59 43 27 
+Números gerados: 32 16 17 34 50 36 5 43 30 15 
