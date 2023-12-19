@@ -1,5 +1,5 @@
-Jogo: Mega-Sena
-Números apostados: 10
-Números disponíveis para apostar: 6 a 20
-Números disponíveis no domínio: 1 a 60
-Números gerados: 32 16 17 34 50 36 5 43 30 15 
+Jogo: Quina
+Números apostados: 5
+Números disponíveis para apostar: 5 a 15
+Números disponíveis no domínio: 1 a 80
+Números gerados: 51 6 71 79 31 

@@ -10,6 +10,11 @@ import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 
+/**
+ * This class is the controller for the Cardapio.fxml file, which is responsible for managing the menu items.
+ * It initializes the GUI components and handles the button events for including, consulting, altering, and removing menu items.
+ * The class also uses the Cardapio class to perform the necessary operations on the menu items.
+ */
 public class CardapioController {
     private Cardapio cardapio = new Cardapio();
     private ToggleGroup grupoBotoes = new ToggleGroup();
